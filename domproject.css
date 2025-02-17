@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 80;
+    align-items: center;
+}
+
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+#logo{
+    height: 80px;
+    object-fit: contain;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+#toggle{
+    display: none;
+}
+
+.toggle-menu{
+    display: none;
+}
+
+@media(max-width: 450px){
+    #toggle{
+        display: inline-block;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toggle-menu{
+        display: flex;
+    }
+}
