@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="domproject.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <img src="data:image/jpeg;base64,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"
+                alt="logo" id="logo">
+            <ul class="menu">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <div id="toggle">
+                <button onclick=showMenu()><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <!-- <div class="toggle-menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div> -->
+        </div>
+    </nav>
+
+    <script src="domproject.js"></script>
+</body>
+
+</html>
+
